@@ -4,7 +4,13 @@ import "./styles.css";
 import { Todo } from "./Todo";
 import { TodoType } from "./types/todo";
 import { Text } from "./Text";
+import { UserProfile } from "./UserProfile";
+import { User } from "./types/user";
 export default function App() {
+  const user: User = {
+    name: "あああ",
+    hobbies: ["ランニング　", "映画"]
+  };
   const [todos, setTodos] = useState<Array<TodoType>>([]);
 
   const onClickFetchData = () => {
@@ -17,6 +23,7 @@ export default function App() {
   };
   return (
     <div className="App">
+      <UserProfile user={user} />
       <Text color="red" fontSize="24px" />
       <button onClick={onClickFetchData}>
         {" "}
