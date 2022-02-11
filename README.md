@@ -1,2 +1,2 @@
-# react-typescript-webapi
+# react-typescript-jsonplaceholder
 Created with CodeSandbox
